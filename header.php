@@ -8,9 +8,7 @@ tylesheet_url'); ?>" />
     </head>
 
     <body>
-
         <div class="container">
-
             <header class="row">
                 <div class="twelve columns">
                     <h1><?php bloginfo('name'); ?></h1>
