@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title></title>
+        <title>WIE Blog</title>
+        <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" />
 <?php wp_head(); ?>
-        <link rel="stylesheet" type="text/css" href="<?php bloginfo('s
-tylesheet_url'); ?>" />
     </head>
 
     <body>
