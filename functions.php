@@ -15,7 +15,7 @@ function blank_widgets_init() {
     /*--- New Widget --- */
     register_sidebar( array(
         'name' => ('Footer Widget Left'),
-        'id' => 'footer-widget-one',
+        'id' => 'footer-widget-left',
         'description' => 'First widget for our footer',
         'before_widget' => '<div class="widget-footer">',
         'after_widget' => '</div>',
@@ -25,7 +25,7 @@ function blank_widgets_init() {
     /*--- Second New Widget --- */
     register_sidebar( array(
         'name' => ('Footer Widget Middle'),
-        'id' => 'footer-widget-two',
+        'id' => 'footer-widget-middle',
         'description' => 'Second widget for our footer',
         'before_widget' => '<div class="widget-footer">',
         'after_widget' => '</div>',
@@ -35,7 +35,7 @@ function blank_widgets_init() {
     /*--- Third New Widget --- */
     register_sidebar( array(
         'name' => ('Footer Widget Right'),
-        'id' => 'footer-widget-three',
+        'id' => 'footer-widget-right',
         'description' => 'Third widget for our footer',
         'before_widget' => '<div class="widget-footer">',
         'after_widget' => '</div>',
@@ -44,5 +44,9 @@ function blank_widgets_init() {
         ));
 }
 add_action('widgets_init', 'blank_widgets_init');
+
+/*-------------- Enable Menu --------------- */
+
+add_theme_support('menus');
 
 ?>
