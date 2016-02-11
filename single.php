@@ -10,7 +10,10 @@
             if (have_posts() ) {
                 /* OUR DATA CONTEXT IS DEFINED  */
                 while ( have_posts() ) {
-                    the_post();?>
+                    the_post();
+                    if ( has_post_thumbnail() ) { ?>
+                        <div class="post-thumbnail"><?php the_post_thumbnail('large'); ?></div>
+                    <?php } ?>
                     <h3><?php the_title(); ?></h3>
                     <?php the_content();
                 } // end while
