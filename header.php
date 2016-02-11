@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>WIE Blog</title>
+        <title><?php bloginfo('description'); ?></title>
         <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" />
 <?php wp_head(); ?>
     </head>
@@ -10,8 +10,8 @@
         <div class="container">
             <header class="row">
                 <div class="twelve columns">
-                    <h1><?php bloginfo('name'); ?></h1>
-                    <p><?php bloginfo('description'); ?></p>
+                    <h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
+                    <h2><?php bloginfo('description'); ?></h2>
                 </div>
             </header>
 <!-- END OF HEADER - BEGIN SECTION CONTENT -->
