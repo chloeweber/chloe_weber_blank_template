@@ -1,10 +1,9 @@
 <?php get_header(); ?>
-
     <section class="row">
-        <div class="three columns">
-            <?php get_sidebar(); ?>
+        <div class="two columns">
+            &nbsp;
         </div>
-        <div class="nine columns">
+        <div class="eight columns">
             <?php
             if (have_posts()) :
                 while (have_posts()) : the_post(); ?>
@@ -13,6 +12,8 @@
                 endwhile;
             endif; ?>
         </div>
+        <div class="two columns">
+            &nbsp;
+        </div>
     </section>
-
 <?php get_footer(); ?>
