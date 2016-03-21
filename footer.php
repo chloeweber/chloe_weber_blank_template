@@ -1,15 +1,11 @@
+        </div>
             <footer class="row">
-                <div class="four columns">
-                    <?php dynamic_sidebar('footer-widget-left'); ?>
-                </div>
-                <div class="four columns">
-                    <?php dynamic_sidebar('footer-widget-middle'); ?>
-                </div>
-                <div class="four columns">
-                    <?php dynamic_sidebar('footer-widget-right'); ?>
+                <div class="twelve columns" id="footer">
+                    <div class="container">
+                        <p class="copyright">Copyright &copy; Chloe Weber 2015</p>
+                    </div>
                 </div>
             </footer>
-        </div>
         <?php wp_footer(); ?>
     </body>
 </html>
