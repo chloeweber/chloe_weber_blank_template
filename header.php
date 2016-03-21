@@ -3,6 +3,7 @@
     <head>
         <title><?php bloginfo('description'); ?></title>
         <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" />
+        <link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css' />
 <?php wp_head(); ?>
     </head>
 
@@ -11,7 +12,7 @@
             <header class="row">
                 <div class="twelve columns">
                     <h1 class="visuallyhidden">Chloe Weber Blog</h1>
-                    <a href="<?php bloginfo('url'); ?>"><img src="wp-content/themes/chloe_weber_blank_template/img/logo.png" alt="Logo" /></a>
+                    <a href="<?php bloginfo('url'); ?>"><img src="wp-content/themes/chloe_weber_blank_template/img/logo.png" alt="Logo" id="logo"/></a>
                     <p id="header-description"><?php bloginfo('description'); ?></p>
                 </div>
 <!-- Add Menu Here -->

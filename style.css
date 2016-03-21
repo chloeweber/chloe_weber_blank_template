@@ -13,21 +13,20 @@ Text Domain: chloe_weber_blank_template
 
 * {
     color: #000000;
-    font-size: 14px;
+    font-size: 15px;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color: magenta;
-}
-
-h1,
-h1 a {
-    font-size: 4.5rem;
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
 }
 
 h3,
@@ -35,9 +34,21 @@ h3 a {
     font-size: 3.5rem;
 }
 
+/* Header */
+
+#logo {
+    width: 20%;
+    height: auto;
+    margin: 0 40%;
+}
+
+#header-description {
+    text-align: center;
+}
+
 .blank-menu-header {
     text-align: left;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .blank-menu-header ul {
@@ -53,12 +64,15 @@ h3 a {
 
 .blank-menu-header ul li a {
     text-decoration: none;
-    margin: 4px;
-    padding: 5px 0px 5px 40px;
-    font-weight: 300;
-    font-size: 1.1rem;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+.blank-menu-header li + li {
+    padding-left: 5%;
 }
 
 .blank-menu-header ul li a:hover {
-    color: #cccccc;
+    color: #df3326;
+	text-decoration: line-through;
 }

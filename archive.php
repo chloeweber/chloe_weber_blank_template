@@ -1,38 +1,30 @@
 <?php get_header(); ?>
-
 <div class="row">
     <div class="twelve columns">
         <?php if ( have_posts() ) : ?>
-            <h2>Archives</h2>
+            <h2 class="page-heading"><?php single_cat_title(); ?></h2>
             <?php
             // The Loop
-            while ( have_posts() ) : the_post();?>
+            while ( have_posts() ) : the_post();
+                if ( has_post_thumbnail() ) { ?>
+                    <div class="post-thumbnail"><?php the_post_thumbnail('medium'); ?></div>
+                <?php } ?>
             <!-- data context -->
-                <h2>
+                <h3>
                     <a href="<?php the_permalink() ?>">
                         <?php the_title(); ?>
                     </a>
-                </h2>
-                <?php the_excerpt(); ?>
+                </h3>
+                <div class="date-author-archive">
+                    <small><?php the_time('F jS, Y') ?> by <?php the_author_posts_link() ?> </small>
+                </div>
+                <div class="excerpt">
+                    <?php the_excerpt(); ?>
+                </div>
             <?php endwhile; ?> <!-- End Loop -->
         <?php else: ?>
             <p>Sorry, no posts matched your criteria.</p>
         <?php endif; ?>
     </div>
 </div>
-<div class="row">
-    <div class="six columns">
-        <h2>Archives by Month:</h2>
-            <ul>
-                <?php wp_get_archives('type=monthly'); ?>
-            </ul>
-    </div>
-    <div class="six columns">
-        <h2>Archives by Category:</h2>
-        <ul>
-            <?php wp_list_categories(); ?>
-        </ul>
-    </div>
-</div>
-
 <?php get_footer(); ?>
