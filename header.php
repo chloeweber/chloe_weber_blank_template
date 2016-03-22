@@ -13,7 +13,7 @@
             <header class="row">
                 <div class="twelve columns">
                     <h1 class="visuallyhidden">Chloe Weber Blog</h1>
-                    <a href="<?php bloginfo('url'); ?>"><img src="wp-content/themes/chloe_weber_blank_template/img/logo.png" alt="Logo" id="logo"/></a>
+                    <a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="Logo" id="logo"/></a>
                     <p id="header-description"><?php bloginfo('description'); ?></p>
                 </div>
 <!-- Menu -->
